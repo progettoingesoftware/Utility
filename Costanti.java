@@ -2,9 +2,9 @@ package it.ing.sw;
 
 import java.io.Serializable;
 
-public class Costanti implements Serializable
+public class Costanti implements Serializable 
 {
-	private static final long serialVersionUID = 1L;
+private static final long serialVersionUID = 1L;
 	
 	public static final String SALUTO_INIZIALE = "Benvenuto nell'applicazione per la gestione di risorse multimediali\n";
 	public static final String SALUTO_FINALE = "Arrivederci, alla prossima!\n";
@@ -52,15 +52,18 @@ public class Costanti implements Serializable
 	public static final String CONTENUTO_ARC = "L'archivio contiene le seguenti categorie:\n%s\n";
 	public static final String CONTENUTO_CAT_RISORSA = "La categoria %s contiene queste risorse:\n%s\n";
 	public static final String CAT_SENZA_SOTTO = "La categoria %s non presenta sottocategorie in quanto contiene direttamente le risorse\n";
-	public static final String CONTENUTO_ELENCO_SOTTO_VUOTO = "Per la categoria %s � in corso l'aggiunta di sottocategorie, in questo momento non � possibile effettuare operazioni\n";
+	public static final String CONTENUTO_ELENCO_SOTTO_VUOTO = "Per la categoria %s Ë in corso l'aggiunta di sottocategorie, in questo momento non Ë possibile effettuare operazioni\n";
 	public static final String CONTENUTO_ELENCO_RISORSE_CAT_VUOTO = "La categoria %s non contiene delle risorse quindi non e' possibile effettuare operazioni\n";	
 	public static final String CONTENUTO_ELENCO_RISORSE_SOTTO_VUOTO = "La sottocategoria %s non contiene delle risorse quindi non e' possibile effettuare operazioni\n";	
 	public static final String CONTENUTO_CAT_SOTTO = "La categoria %s contiene queste sottocategorie:\n%s\n";
 	public static final String CONTENUTO_SOTTO = "La sottocategoria %s contiene queste risorse:\n%s\n"; 
 	
 	public static final String OP_SUCCESSO = "L'operazione e' avvenuta con successo\n";
-    public static final String OP_NO_SUCCESSO_AGGIUNTA = "Attenzione! La risorsa e' gia'�presente nell'archivio oppure la risorsa non e' compatibile con la sottocategoria dove si vuole inserire\n";
-    public static final String OP_NO_SUCCESSO_PRESTITO = "Attenzione! La risorsa indicata non e' presente in archivio e/o non e' disponibile\n";
+	public static final String OP_NO_SUCCESSO_1 = "Attenzione! La risorsa è già presente nella categoria\n";
+	public static final String OP_NO_SUCCESSO_2 = "Attenzione! La risorsa non e' compatibile con la sottocategoria dove si vuole inserirla\n";
+	public static final String OP_NO_SUCCESSO_PRESTITO_1 = "Attenzione! Non è possibile effettuare il prestito perchè la risorsa indicata non e' disponibile\n";
+	public static final String OP_NO_SUCCESSO_PRESTITO_2 = "Attenzione! Non è possibile effettuare il prestito perchè hai superato il massimo numero di prestiti relativo alla categoria\n";
+	public static final String OP_NO_SUCCESSO_PRESTITO_3 = "Attenzione! Non è possibile effettuare il prestito perchè hai già in prestito la risorsa\n";
 	public static final String OP_NO_SUCCESSO_PROROGA_1 = "Attenzione! Non e' stato possibile effettuare la proroga richiesta\n";
 	public static final String OP_NO_SUCCESSO_PROROGA_2 = "Al momento non ci sono prestiti in corso quindi non e' possibile effettuare una proroga\n";
  
@@ -76,8 +79,9 @@ public class Costanti implements Serializable
     public static final String INS_PROCEDERE_SOTTO = "Vuoi proseguire nella scelta della sottocategoria (S/N)?\n";
     public static final String INS_PROCEDERE_RISORSA = "Vuoi proseguire nella scelta della risorsa? (S/N)\n";
         
-    public static final String INS_NUMERO_CAT_PRESTITO = "Inserisci il numero della categoria di cui vuoi richiedere un prestito:\n";
-    public static final String INS_NUMERO_SOTTO_PRESTITO =  "Inserisci il numero della sottocategoria in cui cercare la risorsa:\n";
+    public static final String INS_NUMERO_CAT_PRESTITO = "Inserisci il numero della categoria di cui vuoi richiedere una risorsa in prestito:";
+    public static final String INS_NUMERO_SOTTOC_PRESTITO =  "Inserisci il numero della sottocategoria di cui vuoi richiedere una risorsa in prestito:";
+    public static final String INS_PROCEDERE_PRESTITO = "Vuoi proseguire nella richiesta del prestito della risorsa? (S/N)\n";
     public static final String INS_NUMERO_RISORSA_PRESTITO = "Inserisci il numero della risorsa da richiedere in prestito:\n";      
 
     public static final String INS_NUMERO_PRESTITO_PROROGA = "Inserisci il numero del prestito di cui vuoi richiedere la proroga:";      
@@ -101,6 +105,9 @@ public class Costanti implements Serializable
 	public static final String RISORSA_DISPONIBILE = "La risorsa indicata e' disponibile\n";
 	public static final String RISORSA_NON_DISPONIBILE = "La risorsa indicata non e' disponibile\n";
 
+	public static final String LIBRI = "Libri";
+	public static final String FILM = "Film";
+	
 	public static final int MAGGIORE_ETA = 18;
 	public static final int NUM_MINIMO = 1;
 	public static final int VUOTO = 0;
