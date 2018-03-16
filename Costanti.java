@@ -16,14 +16,15 @@ private static final long serialVersionUID = 1L;
 	public static final String[] OPZIONI_C = { "Inserisci username e password", "Indietro" };
 	public static final String INTESTAZIONE_D = "COSA DESIDERI FARE?";
 	public static final String[] OPZIONI_D_12 = { "Rinnova iscrizione", "Visualizza profilo", "Logout" };
-	public static final String [] OPZIONI_D_345 = {"Rinnova iscrizione", "Visualizza profilo", "Visualizza prestiti in corso", "Richiedi un nuovo prestito", "Richiedi proroga per un prestito", "Ricerca risorsa", "Valuta disponibilita'", "Logout"};
+	public static final String [] OPZIONI_D_345 = {"Rinnova iscrizione", "Visualizza profilo", "Visualizza prestiti in corso", "Richiedi un nuovo prestito", "Richiedi proroga per un prestito", "Ricerca risorsa", "Valuta disponibilita' risorsa", "Logout"};
 	public static final String INTESTAZIONE_E = "ACCESSO OPERATORE";
 	public static final String[] OPZIONI_E = { "Inserisci username e password", "Indietro" };
 	public static final String INTESTAZIONE_F = "COSA DESIDERI FARE?";
 	public static final String[] OPZIONI_F_1 = { "Visualizza anagrafica fruitori", "Logout" };
 	public static final String [] OPZIONI_F_2 = {"Visualizza anagrafica fruitori", "Visualizza archivio", "Aggiungi risorsa", "Rimuovi risorsa", "Logout"};
 	public static final String [] OPZIONI_F_34 = {"Visualizza anagrafica fruitori", "Visualizza archivio", "Aggiungi risorsa", "Rimuovi risorsa", "Ricerca risorsa", "Valuta disponibilita' risorsa", "Logout"};
-
+	public static final String [] OPZIONI_F_5 = {"Visualizza anagrafica fruitori", "Visualizza archivio", "Aggiungi risorsa", "Rimuovi risorsa", "Ricerca risorsa", "Valuta disponibilita' risorsa", "Interroga l'archivio storico", "Logout"};
+	
 	public static final String INS_NOME = "Inserisci il tuo nome: ";
 	public static final String INS_COGNOME = "Inserisci il tuo cognome: ";
 	public static final String INS_USERNAME = "Inserisci il tuo username: ";
@@ -34,7 +35,7 @@ private static final long serialVersionUID = 1L;
 
 	public static final String ISCRIZIONE_OK = "Complimenti, iscrizione avvenuta con successo!\n";
 	public static final String ISCRIZIONE_NON_OK = "Non e' stato possibile iscrivere alcun utente\n";
-	public static final String ISCRIZIONE_NON_OK_OMONIMIA_FRUITORI = "ATTENZIONE! Le credenziali inserite non sono valide poiche' gia' in uso.\n";
+	public static final String ISCRIZIONE_NON_OK_FRUITORE_GIA_ISCRITTO = "ATTENZIONE! Sei già iscritto all'applicazione.\n";
 	public static final String ISCRIZIONE_NON_OK_STESSO_USERNAME = "ATTENZIONE! Lo username indicato non e' valido poiche' gia' in uso.\n";
 	public static final String ISCRIZIONE_NON_OK_MAGGIORE_ETA = "ATTENZIONE! L'utente indicato non puo' iscriversi in quanto non e' maggiorenne.\n";
 
@@ -101,10 +102,11 @@ private static final long serialVersionUID = 1L;
   	public static final String AVVIO_RICERCA_FILM = "Come intendi ricercare il film?\n1-Per titolo\n2-Per regista\n3-Per attore\n4-Per anno di pubblicazione\n5-Per genere\n\nDigitare un numero:\n";
 	public static final String INTESTAZIONE_RICERCA_RISORSE = "Elenco delle risorse trovate: \n";
 	public static final String RICHIESTA_DIGITAZIONE_VALUTAZIONE = "Digitare il numero della risorsa scelta:\n";
-	public static final String RICERCA_VUOTA = "Non sono state trovate delle risorse\n";
+	public static final String RICERCA_VUOTA = "Non sono state trovate delle risorse";
 	public static final String RISORSA_DISPONIBILE = "La risorsa indicata e' disponibile\n";
 	public static final String RISORSA_NON_DISPONIBILE = "La risorsa indicata non e' disponibile\n";
-
+    public static final String NO_VALUTAZIONE = "Non è possibile effettuare la valutazione in quanto non sono state trovate risorse\n";
+	
 	public static final String LIBRI = "Libri";
 	public static final String FILM = "Film";
 	
@@ -113,4 +115,10 @@ private static final long serialVersionUID = 1L;
 	public static final int VUOTO = 0;
 	
 	public static final int NUM_MASSIMO_RICERCA = 5;
+	
+	public static final String SCELTA_INFORMAZIONE = "Quale delle seguenti informazioni intendi mostrare?\n1-Numero di prestiti per anno solare\n2-Numero di proroghe per anno solare\n3-Risorsa pi˘ richiesta per anno solare\n4-Numero di prestiti per fruitore per anno solare\n";
+	public static final int NUM_MASSIMO_SCELTA = 4;
+	public static final String INS_ANNO_RICHIESTO = "Inserisci l'anno:";
+	public static final String INS_FRUITORE_RICHIESTO = "Inserisci l'username del fruitore: ";
+
 }
