@@ -4,7 +4,7 @@ import java.io.Serializable;
 
 public class Costanti implements Serializable 
 {
-private static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
 	
 	public static final String SALUTO_INIZIALE = "Benvenuto nell'applicazione per la gestione di risorse multimediali\n";
 	public static final String SALUTO_FINALE = "Arrivederci, alla prossima!\n";
@@ -21,9 +21,9 @@ private static final long serialVersionUID = 1L;
 	public static final String[] OPZIONI_E = { "Inserisci username e password", "Indietro" };
 	public static final String INTESTAZIONE_F = "COSA DESIDERI FARE?";
 	public static final String[] OPZIONI_F_1 = { "Visualizza anagrafica fruitori", "Logout" };
-	public static final String [] OPZIONI_F_2 = {"Visualizza anagrafica fruitori", "Visualizza archivio", "Aggiungi risorsa", "Rimuovi risorsa", "Logout"};
-	public static final String [] OPZIONI_F_34 = {"Visualizza anagrafica fruitori", "Visualizza archivio", "Aggiungi risorsa", "Rimuovi risorsa", "Ricerca risorsa", "Valuta disponibilita' risorsa", "Logout"};
-	public static final String [] OPZIONI_F_5 = {"Visualizza anagrafica fruitori", "Visualizza archivio", "Aggiungi risorsa", "Rimuovi risorsa", "Ricerca risorsa", "Valuta disponibilita' risorsa", "Interroga l'archivio storico", "Logout"};
+	public static final String [] OPZIONI_F_2 = {"Visualizza anagrafica fruitori", "Visualizza archivio risorse", "Aggiungi risorsa", "Rimuovi risorsa", "Logout"};
+	public static final String [] OPZIONI_F_34 = {"Visualizza anagrafica fruitori", "Visualizza archivio risorse", "Aggiungi risorsa", "Rimuovi risorsa", "Ricerca risorsa", "Valuta disponibilita' risorsa", "Logout"};
+	public static final String [] OPZIONI_F_5 = {"Visualizza anagrafica fruitori", "Visualizza archivio risorse", "Aggiungi risorsa", "Rimuovi risorsa", "Ricerca risorsa", "Valuta disponibilita' risorsa", "Interroga l'archivio storico", "Logout"};
 	
 	public static final String INS_NOME = "Inserisci il tuo nome: ";
 	public static final String INS_COGNOME = "Inserisci il tuo cognome: ";
@@ -33,7 +33,7 @@ private static final long serialVersionUID = 1L;
 	public static final String INS_MESE_NASCITA = "Inserisci il tuo mese di nascita (in cifre): ";
 	public static final String INS_ANNO_NASCITA = "Inserisci il tuo anno di nascita (indicare 4 cifre): ";
 
-	public static final String ISCRIZIONE_OK = "Complimenti, iscrizione avvenuta con successo!\n";
+	public static final String ISCRIZIONE_OK = "Complimenti, l'iscrizione è avvenuta con successo!\n";
 	public static final String ISCRIZIONE_NON_OK = "Non e' stato possibile iscrivere alcun utente\n";
 	public static final String ISCRIZIONE_NON_OK_FRUITORE_GIA_ISCRITTO = "ATTENZIONE! Sei già iscritto all'applicazione.\n";
 	public static final String ISCRIZIONE_NON_OK_STESSO_USERNAME = "ATTENZIONE! Lo username indicato non e' valido poiche' gia' in uso.\n";
@@ -53,7 +53,7 @@ private static final long serialVersionUID = 1L;
 	public static final String CONTENUTO_ARC = "L'archivio contiene le seguenti categorie:\n%s\n";
 	public static final String CONTENUTO_CAT_RISORSA = "La categoria %s contiene queste risorse:\n%s\n";
 	public static final String CAT_SENZA_SOTTO = "La categoria %s non presenta sottocategorie in quanto contiene direttamente le risorse\n";
-	public static final String CONTENUTO_ELENCO_SOTTO_VUOTO = "Per la categoria %s Ë in corso l'aggiunta di sottocategorie, in questo momento non Ë possibile effettuare operazioni\n";
+	public static final String CONTENUTO_ELENCO_SOTTO_VUOTO = "Per la categoria %s e' in corso l'aggiunta di sottocategorie, in questo momento non e' possibile effettuare operazioni\n";
 	public static final String CONTENUTO_ELENCO_RISORSE_CAT_VUOTO = "La categoria %s non contiene delle risorse quindi non e' possibile effettuare operazioni\n";	
 	public static final String CONTENUTO_ELENCO_RISORSE_SOTTO_VUOTO = "La sottocategoria %s non contiene delle risorse quindi non e' possibile effettuare operazioni\n";	
 	public static final String CONTENUTO_CAT_SOTTO = "La categoria %s contiene queste sottocategorie:\n%s\n";
@@ -87,19 +87,17 @@ private static final long serialVersionUID = 1L;
 
     public static final String INS_NUMERO_PRESTITO_PROROGA = "Inserisci il numero del prestito di cui vuoi richiedere la proroga:";      
     
-    public static final String INS_TITOLO_RISORSA = "Inserisci il titolo: ";      
-    public static final String INS_AUTORE_LIBRO = "Inserisci il cognome di un autore: ";      
     public static final String INS_GENERE_RISORSA = "Inserisci il genere: ";      
     public static final String INS_ANNOPUB_RISORSA = "Inserisci l'anno di pubblicazione: ";      
     public static final String INS_CASAED_LIBRO = "Inserisci la casa editrice: "; 
+    public static final String INS_PAROLA_TITOLO_RISORSA = "Inserisci una parola contenuta nel titolo: ";      
+    public static final String INS_COGNOME_AUTORE_LIBRO = "Inserisci il cognome di un autore: ";      
+    public static final String INS_COGNOME_REGISTA_FILM = "Inserisci il cognome di un regista: ";      
+    public static final String INS_COGNOME_ATTORE_FILM = "Inserisci il cognome di un attore: ";      
     
-    public static final String INS_REGISTA_FILM = "Inserisci il cognome di un regista: ";      
-    public static final String INS_ATTORE_FILM = "Inserisci il cognome di un attore: ";      
-
     public static final String INS_NUMERO_CAT_RICERCA = "Inserisci il numero della categoria in cui vuoi cercare la risorsa:\n";
-	public static final String AVVIO_RICERCA_RISORSE = "Come intendi ricercare la risorsa?\n1-Per titolo\n2-Per autore\n3-Per genere\n4-Per anno di pubblicazione\n5-Per casa editrice\n\nDigitare un numero:\n";
- 	public static final String AVVIO_RICERCA_LIBRI = "Come intendi ricercare il libro?\n1-Per titolo\n2-Per autore\n3-Per anno di pubblicazione\n4-Per casa editrice\n\nDigitare un numero:\n";
-  	public static final String AVVIO_RICERCA_FILM = "Come intendi ricercare il film?\n1-Per titolo\n2-Per regista\n3-Per attore\n4-Per anno di pubblicazione\n5-Per genere\n\nDigitare un numero:\n";
+	public static final String AVVIO_RICERCA_LIBRI = "Come intendi ricercare il libro?\n1-Per una parola contenuta nel titolo\n2-Per il cognome di un autore\n3-Per genere\n4-Per anno di pubblicazione\n5-Per casa editrice\n\nDigitare un numero:\n";
+  	public static final String AVVIO_RICERCA_FILM = "Come intendi ricercare il film?\n1-Per una parola contenuta nel titolo\n2-Per il cognome del regista\n3-Per il cognome di un attore\n4-Per anno di pubblicazione\n5-Per genere\n\nDigitare un numero:\n";
 	public static final String INTESTAZIONE_RICERCA_RISORSE = "Elenco delle risorse trovate: \n";
 	public static final String RICHIESTA_DIGITAZIONE_VALUTAZIONE = "Digitare il numero della risorsa scelta:\n";
 	public static final String RICERCA_VUOTA = "Non sono state trovate delle risorse";
@@ -116,9 +114,16 @@ private static final long serialVersionUID = 1L;
 	
 	public static final int NUM_MASSIMO_RICERCA = 5;
 	
-	public static final String SCELTA_INFORMAZIONE = "Quale delle seguenti informazioni intendi mostrare?\n1-Numero di prestiti per anno solare\n2-Numero di proroghe per anno solare\n3-Risorsa pi˘ richiesta per anno solare\n4-Numero di prestiti per fruitore per anno solare\n";
+	public static final String SCELTA_INTERROGAZIONE = "Quale delle seguenti interrogazioni desideri fare all'archivio?\n1-Numero di prestiti per anno solare\n2-Numero di proroghe per anno solare\n3-Risorsa piu' richiesta per anno solare\n4-Numero di prestiti per fruitore per anno solare\nDigitare un numero:\n";
 	public static final int NUM_MASSIMO_SCELTA = 4;
 	public static final String INS_ANNO_RICHIESTO = "Inserisci l'anno:";
-	public static final String INS_FRUITORE_RICHIESTO = "Inserisci l'username del fruitore: ";
+	public static final String INS_FRUITORE_RICHIESTO = "Inserisci lo username del fruitore: ";
+    public static final String FRUITORE_NON_TROVATO = "Il fruitore selezionato non è presente nell'anagrafica\n";   
+    public static final String NUM_PRESTITI_PER_ANNO = "Il numero di prestiti per l'anno selezionato è: ";
+    public static final String NUM_PROROGHE_PER_ANNO = "Il numero di proroghe per l'anno selezionato è: ";
+    public static final String TITOLO_RISORSA_PIU_PRESTITI_PER_ANNO = "Il titolo della risorsa con piu' prestiti per l'anno selezionato è: ";
+    public static final String TITOLO_RISORSA_SENZA_PRESTITI_PER_ANNO = "Per l'anno selezionato non sono stati effettuati prestiti";
+    public static final String NUM_PRESTITI_PER_FRUITORE_PER_ANNO = "Il numero di prestiti per il fruitore e per l'anno selezionato è: ";
+    
 
 }
