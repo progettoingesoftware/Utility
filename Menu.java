@@ -1,4 +1,4 @@
-package it.ing.sw;
+package utility;
 
 import java.io.Serializable;
 
@@ -9,13 +9,12 @@ public class Menu implements Serializable
 {
 	private static final long serialVersionUID = 1L;
 	
-	private String titolo;
-	private String [] voci;
-	
 	public static final String CORNICE = "*************************************************************";
 	public static final String RICHIESTA_INSERIMENTO = "Digita il numero dell'opzione desiderata: ";
-	public static final int NUM_MINIMO_OPZIONE = 1;
 	
+	private String titolo;
+	private String [] voci;
+	   
 	/**
 	 * Metodo costruttore della classe menu'
 	 * 
@@ -38,7 +37,7 @@ public class Menu implements Serializable
 	public int scegli()
     {
 		stampa();
- 	   	int opzione = InputDati.leggiIntero(RICHIESTA_INSERIMENTO, NUM_MINIMO_OPZIONE , voci.length);
+ 	   	int opzione = InputDati.leggiIntero(RICHIESTA_INSERIMENTO, Costanti.NUM_MINIMO, voci.length);
 		   
  	   	return opzione;
 	}

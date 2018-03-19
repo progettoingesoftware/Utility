@@ -1,4 +1,4 @@
-package it.ing.sw;
+package utility;
 
 import java.util.*;
 
@@ -142,7 +142,7 @@ public class InputDati
 	    	else
 	    	{
 	    		System.out.println(ERRORE_FORMATO);
-	    		String daButtare = lettore.next();
+	    		lettore.next();
 	    	}
 	    	
 	    } while (!finito);
@@ -232,7 +232,7 @@ public class InputDati
 	    	else
 	    	{
 	    		System.out.println(ERRORE_FORMATO);
-	    		String daButtare = lettore.next();
+	    		lettore.next();
 	    	}
 	    } while (!finito);
 	    

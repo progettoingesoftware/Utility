@@ -1,4 +1,4 @@
-package it.ing.sw;
+package utility;
 
 import java.io.*;
 
@@ -12,7 +12,6 @@ public class ServizioFile
 	private final static String MSG_NO_SCRITTURA = "ATTENZIONE: PROBLEMI CON LA SCRITTURA DEL FILE ";
 	private final static String MSG_NO_CHIUSURA ="ATTENZIONE: PROBLEMI CON LA CHIUSURA DEL FILE ";
   	
-	
 	/**
 	 * Consente la lettura da file; nel caso in cui questa non sia possibile visualizza i relativi messaggi di errore
 	 * @param f : il file da leggere
