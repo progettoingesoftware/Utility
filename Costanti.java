@@ -48,6 +48,7 @@ public class Costanti implements Serializable
 	public static final String DATA_DI_NASCITA_ERRATA = "ATTENZIONE! La data di nascita inserita non e' valida.\n";
 
 	public static final String RICHIESTA_PROSECUZIONE = "Si desidera riprovare? (S/N)\n";
+	public static final String RICHIESTA_LOGOUT = "Si desidera effettuare il logout? (S/N)\n";
 	public static final String ERRORE = "Si e' verificato un errore\n";
 
 	public static final String CONTENUTO_ARC = "L'archivio contiene le seguenti categorie:\n%s\n";
@@ -86,6 +87,7 @@ public class Costanti implements Serializable
     public static final String INS_NUMERO_RISORSA_PRESTITO = "Inserisci il numero della risorsa da richiedere in prestito:\n";      
 
     public static final String INS_NUMERO_PRESTITO_PROROGA = "Inserisci il numero del prestito di cui vuoi richiedere la proroga:";      
+    public static final String INS_PROCEDERE_PROROGA = "Vuoi proseguire nella richiesta della proroga del prestito? (S/N)\n";
     
     public static final String INS_GENERE_RISORSA = "Inserisci il genere: ";      
     public static final String INS_ANNOPUB_RISORSA = "Inserisci l'anno di pubblicazione: ";      
