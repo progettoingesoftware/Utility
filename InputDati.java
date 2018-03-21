@@ -1,4 +1,4 @@
-package it.ing.sw;
+package utility;
 
 import java.util.*;
 
@@ -26,7 +26,7 @@ public class InputDati
 	
 	/**
      * Metodo per la stampa di un messaggio a video e la successiva acquisizione della stringa digitata dall'utente
-     * @param messaggio
+     * @param messaggio: il messaggio da stampare
      * @return String
      */    
 	public static String leggiStringa (String messaggio)
@@ -38,7 +38,7 @@ public class InputDati
 	/**
      * Metodo per la stampa di un messaggio a video e la successiva acquisizione della stringa digitata dall'utente privata degli eventuali spazi iniziali e finali.
      * Se tale stringa e' vuota mostra a video un messaggio di errore
-     * @param messaggio
+     * @param messaggio: il messaggio da stampare
      * @return String
      */ 
 	public static String leggiStringaNonVuota(String messaggio)
@@ -64,7 +64,7 @@ public class InputDati
 	/**
      * Metodo per la stampa di un messaggio a video e la successiva acquisizione del primo carattere della stringa digitata dall'utente.
      * Se tale stringa e' vuota mostra a video un messaggio di errore
-     * @param messaggio
+     * @param messaggio: il messaggio da stampare
      * @return char
      */ 
 	public static char leggiChar (String messaggio)
@@ -96,8 +96,8 @@ public class InputDati
      * Metodo per la stampa di un messaggio a video e la successiva acquisizione del primo carattere della stringa digitata dall'utente.
      * Viene poi ottenuta la lettera maiuscola corrispondente al carattere acquisito e successivamente si verifica che tale lettera compaia nell'elenco dei caratteri ammissibili selezionati dall'utente;
      * in caso contrario viene mostrato a video un messaggio di errore
-     * @param messaggio
-     * @param ammissibili
+     * @param messaggio: il messaggio da stampare
+     * @param ammissibili: stringa con i caratteri ammissibili
      * @return char
      */ 
 	public static char leggiUpperChar (String messaggio, String ammissibili)
@@ -123,7 +123,7 @@ public class InputDati
 	/**
      * Metodo per la stampa di un messaggio a video e la successiva acquisizione di un intero digitato dall'utente.
      * Se il formato del numero acquisito non e' compatibile mostra a video un messaggio di errore.
-     * @param messaggio
+     * @param messaggio: il messaggio da stampare
      * @return int
      */ 
 	public static int leggiIntero (String messaggio)
@@ -142,7 +142,7 @@ public class InputDati
 	    	else
 	    	{
 	    		System.out.println(ERRORE_FORMATO);
-	    		String daButtare = lettore.next();
+	    		lettore.next();
 	    	}
 	    	
 	    } while (!finito);
@@ -154,8 +154,8 @@ public class InputDati
      * Metodo per la stampa di un messaggio a video e la successiva acquisizione di un intero digitato dall'utente il cui valore sia superiore ad un valore minimo impostato.
      * Se il formato del numero acquisito non e' compatibile mostra a video un messaggio di errore;
      * se il valore del numero acquisito e' minore del valore impostato mostra a video un messaggio di errore.
-     * @param messaggio
-     * @param minimo
+     * @param messaggio: il messaggio da stampare
+     * @param minimo: il numero minimo ammissibile
      * @return int
      */ 
 	public static int leggiInteroConMinimo(String messaggio, int minimo)
@@ -181,9 +181,9 @@ public class InputDati
      * Metodo per la stampa di un messaggio a video e la successiva acquisizione di un intero digitato dall'utente il cui valore sia superiore ad un valore minimo impostato ed inferiore ad un valore massimo impostato.
      * Se il formato del numero acquisito non e' compatibile mostra a video un messaggio di errore;
      * se il valore del numero acquisito e' minore o maggiore del valore impostato mostra a video un messaggio di errore.
-     * @param messaggio
-     * @param minimo
-     * @param massimo
+     * @param messaggio: il messaggio da stampare
+     * @param minimo: il numero minimo ammissibile
+     * @param massimo: il numero massimo ammissibile
      * @return int
      */ 
 	public static int leggiIntero(String messaggio, int minimo, int massimo)
@@ -212,7 +212,7 @@ public class InputDati
 	/**
      * Metodo per la stampa di un messaggio a video e la successiva acquisizione di un numero digitato dall'utente.
      * Se il formato del numero acquisito non e' compatibile mostra a video un messaggio di errore.
-     * @param messaggio
+     * @param messaggio: il messaggio da stampare
      * @return int
      */ 
 	public static double leggiDouble (String messaggio)
@@ -232,7 +232,7 @@ public class InputDati
 	    	else
 	    	{
 	    		System.out.println(ERRORE_FORMATO);
-	    		String daButtare = lettore.next();
+	    		lettore.next();
 	    	}
 	    } while (!finito);
 	    
@@ -243,8 +243,8 @@ public class InputDati
      * Metodo per la stampa di un messaggio a video e la successiva acquisizione di un numero digitato dall'utente il cui valore sia superiore ad un valore minimo impostato.
      * Se il formato del numero acquisito non e' compatibile mostra a video un messaggio di errore;
      * se il valore del numero acquisito e' minore del valore impostato mostra a video un messaggio di errore.
-     * @param messaggio
-     * @param minimo
+     * @param messaggio: il messaggio da stampare
+     * @param minimo: il numero minimo ammissibile
      * @return int
      */ 
 	public static double leggiDoubleConMinimo (String messaggio, double minimo)
@@ -264,5 +264,4 @@ public class InputDati
 	     
 		return valoreLetto;
 	}
-	
 }

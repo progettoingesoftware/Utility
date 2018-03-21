@@ -1,4 +1,4 @@
-package it.ing.sw;
+package utility;
 
 import java.io.Serializable;
 
@@ -19,8 +19,7 @@ public class Menu implements Serializable
 	/**
 	 * Metodo costruttore della classe menu'
 	 * 
-	 * Pre : titolo != ""
-	 * Pre : voci != null
+	 * @pre : (titolo != "") && (voci != null)
 	 * 
 	 * @param titolo : titolo del menu'
 	 * @param voci : voci del menu'
